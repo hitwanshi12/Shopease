@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="myntra-coupon.css">
+    <title>coupons</title>
+    <script>
+        // document.getElementById("code1")
+        //   .onclick = function() {
+        //     let text = document.getElementById("code").value;
+        //     navigator.clipboard.writeText(text)
+        //       .then(() => {
+        //         alert('Text copied to clipboard');
+        //       })
+        //       .catch(err => {
+        //         alert('Error in copying text: ', err);
+        //       });
+        //   }
+
+// popup
+          function toggle(){
+ 
+ let toggle = document.querySelector('.popup-container')
+
+ toggle.classList.toggle('toggle');
+
+}
+
+// for copie
+
+function handleCopyTextFromParagraph() {
+  const body = document.querySelector('body');
+  const paragraph = document.getElementById("code");
+  const area = document.createElement('textarea');
+  body.appendChild(area);
+
+  area.value = paragraph.innerText;
+  area.select();
+  document.execCommand('copy');
+
+  body.removeChild(area);
+}
+      </script>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="#">Myntra</a> 
+            <a class="nav-link" href="flipkart-coupon.html">Flipkart</a>
+            <a class="nav-link" href="amazon-coupon.html">Amazon</a>
+        </nav>
+</header>
+    
+        
+    
+    <div class="grid-container">
+        <a href="https://www.myntra.com/my/coupons?"></a>
+        <div class="item" id="item1">
+            <a href="https://www.myntra.com/my/coupons?">
+                <p class="i1t1" id="text1">
+                    2,000
+                </p>
+                <p class="i1t2" id="text1">
+                    OFF
+                </p>
+            </a>
+            
+        </div>
+        <div class="item" id="item2"> 
+            <p class="i2t1" id="text2">
+                On minimum purchase of Rs. 7,999
+            </p>
+            <p class="i2t2" id="text2">
+                Code:<span id="code">PREMIUM1KOFF</span>
+            </p>
+
+            
+        </div>
+        <div class="item" id="item3"> 
+            <p class="i3t1" id="text31">
+                Expiry:
+            </p>
+                 
+            <p class="i3t2" id="text32">
+                 OCT 31 2022  |
+            </p>
+            <p class="i3t1" id="text33">
+                11:59:00 P.M
+            </p>
+            <button  onclick="handleCopyTextFromParagraph(),toggle()"  type="button" class="btn btn-outline-danger btn-sm" id="code1">Redeem now</button>
+        
+        </div>
+        <!-- popup -->
+        <div class="popup-container">
+
+            <div class="popup">
+        
+                <h3>THE CODE HAS BEEN COPIED</h3>
+                
+        
+                <div onclick="toggle()" id="close">✖</div>
+        
+            </div>
+        
+        </div>
+        <!-- end -->
+    
+    </div>
+
+    <div class="grid-container">
+        <a href="https://www.myntra.com/my/coupons?"></a>
+        <div class="item" id="item1">
+            <a href="https://www.myntra.com/my/coupons?">
+                <p class="i1t1" id="text1">
+                    30%
+                </p>
+                <p class="i1t2" id="text1">
+                    OFF
+                </p>
+            </a>
+            
+        </div>
+        <div class="item" id="item2"> 
+            <p class="i2t1" id="text2">
+                On minimum purchase of Rs. 0
+            </p>
+            <p class="i2t2" id="text2">
+                Code: <span id="code">LEVISB2G30</span>
+            </p>
+        </div>
+        <div class="item" id="item3"> 
+            <p class="i3t1" id="text31">
+                Expiry:
+            </p>
+            <p class="i3t2" id="text32">
+                 NOV 30 2022  |
+            </p>
+            <p class="i3t1" id="text33">
+                11:59:00 P.M
+            </p>
+            <button  onclick="handleCopyTextFromParagraph(),toggle()"  type="button" class="btn btn-outline-danger btn-sm" id="code1">Redeem now</button>
+        
+        </div>
+    
+    </div>
+    <div class="grid-container">
+        <a href="https://www.myntra.com/my/coupons?"></a>
+        <div class="item" id="item1">
+            <a href="https://www.myntra.com/my/coupons?">
+                <p class="i1t1" id="text1">
+                    20%
+                </p>
+                <p class="i1t2" id="text1">
+                    OFF
+                </p>
+            </a>
+            
+        </div>
+        <div class="item" id="item2"> 
+            <p class="i2t1" id="text2">
+                On minimum purchase of Rs. 999
+            </p>
+            <p class="i2t2" id="text2">
+                Code:<span id="code">FM20</span> 
+            </p>
+        </div>
+        <div class="item" id="item3"> 
+            <p class="i3t1" id="text31">
+                Expiry:
+            </p>
+            <p class="i3t2" id="text32">
+                 OCT 31 2022  |
+            </p>
+            <p class="i3t1" id="text33">
+                11:59:00 P.M
+            </p>
+            <button  onclick="handleCopyTextFromParagraph(),toggle()"  type="button" class="btn btn-outline-danger btn-sm" id="code1">Redeem now</button>
+        
+        </div>
+    
+    </div>
+    <div class="grid-container">
+        <a href="https://www.myntra.com/my/coupons?"></a>
+        <div class="item" id="item1">
+            <a href="https://www.myntra.com/my/coupons?">
+                <p class="i1t1" id="text1">
+                    20%
+                </p>
+                <p class="i1t2" id="text1">
+                    OFF
+                </p>
+            </a>
+            
+        </div>
+        <div class="item" id="item2"> 
+            <p class="i2t1" id="text2">
+                On minimum purchase of Rs. 3,500
+            </p>
+            <p class="i2t2" id="text2">
+                Code:<span id="code">ABHOFF</span>  
+            </p>
+        </div>
+        <div class="item" id="item3"> 
+            <p class="i3t1" id="text31">
+                Expiry:
+            </p>
+            <p class="i3t2" id="text32">
+                OCT 26 2022  |
+            </p>
+            <p class="i3t1" id="text33">
+                11:59:00 P.M
+            </p>
+            <button  onclick="handleCopyTextFromParagraph(),toggle()"  type="button" class="btn btn-outline-danger btn-sm" id="code1">Redeem now</button>
+        
+        </div>
+    
+    </div>
+    <div class="grid-container">
+        <a href="https://www.myntra.com/my/coupons?"></a>
+        <div class="item" id="item1">
+            <a href="https://www.myntra.com/my/coupons?">
+                <p class="i1t1" id="text1">
+                    20%
+                </p>
+                <p class="i1t2" id="text1">
+                    OFF
+                </p>
+            </a>
+            
+        </div>
+        <div class="item" id="item2"> 
+            <p class="i2t1" id="text2">
+                On minimum purchase of Rs. 1,499
+            </p>
+            <p class="i2t2" id="text2">
+                Code: <span id="code" >STEAL20</span>
+            </p>
+        </div>
+        <div class="item" id="item3"> 
+            <p class="i3t1" id="text31">
+                Expiry:
+            </p>
+            <p class="i3t2" id="text32">
+                 OCT 23 2022  |
+            </p>
+            <p class="i3t1" id="text33">
+                11:59:00 P.M
+            </p>
+            <button  onclick="handleCopyTextFromParagraph(),toggle()"  type="button" class="btn btn-outline-danger btn-sm" id="code1">Redeem now</button>
+        
+        </div>
+    
+    </div>
+    <div class="grid-container">
+        <a href="https://www.myntra.com/my/coupons?"></a>
+        <div class="item" id="item1">
+            <a href="https://www.myntra.com/my/coupons?">
+                <p class="i1t1" id="text1">
+                    15%
+                </p>
+                <p class="i1t2" id="text1">
+                    OFF
+                </p>
+            </a>
+            
+        </div>
+        <div class="item" id="item2"> 
+            <p class="i2t1" id="text2">
+                On minimum purchase of Rs. 0
+            </p>
+            <p class="i2t2" id="text2">
+                Code: <span id="code" >CAXTRA15</span>
+            </p>
+        </div>
+        <div class="item" id="item3"> 
+            <p class="i3t1" id="text31">
+                Expiry:
+            </p>
+            <p class="i3t2" id="text32">
+                 OCT 31 2022  |
+            </p>
+            <p class="i3t1" id="text33">
+                11:59:00 P.M
+            </p>
+            <button  onclick="handleCopyTextFromParagraph(),toggle()"  type="button" class="btn btn-outline-danger btn-sm" id="code1">Redeem now</button>
+        
+        </div>
+    
+    </div>
+    <div class="grid-container">
+        <a href="https://www.myntra.com/my/coupons?"></a>
+        <div class="item" id="item1">
+            <a href="https://www.myntra.com/my/coupons?">
+                <p class="i1t1" id="text1">
+                    2,000
+                </p>
+                <p class="i1t2" id="text1">
+                    OFF
+                </p>
+            </a>
+            
+        </div>
+        <div class="item" id="item2"> 
+            <p class="i2t1" id="text2">
+                On minimum purchase of Rs. 7,999
+            </p>
+            <p class="i2t2" id="text2">
+                Code: <span id="code" >CAXTRA15</span>
+            </p>
+        </div>
+        <div class="item" id="item3"> 
+            <p class="i3t1" id="text31">
+                Expiry:
+            </p>
+            <p class="i3t2" id="text32">
+                 OCT 31 2022  |
+            </p>
+            <p class="i3t1" id="text33">
+                11:59:00 P.M
+            </p>
+            <button  onclick="handleCopyTextFromParagraph(),toggle()"  type="button" class="btn btn-outline-danger btn-sm" id="code1">Redeem now</button>
+        
+        </div>
+    
+    </div>
+    <div class="grid-container">
+        <a href="https://www.myntra.com/my/coupons?"></a>
+        <div class="item" id="item1">
+            <a href="https://www.myntra.com/my/coupons?">
+                <p class="i1t1" id="text1">
+                    2,000
+                </p>
+                <p class="i1t2" id="text1">
+                    OFF
+                </p>
+            </a>
+            
+        </div>
+        <div class="item" id="item2"> 
+            <p class="i2t1" id="text2">
+                On minimum purchase of Rs. 7,999
+            </p>
+            <p class="i2t2" id="text2">
+                Code: PREMIUM1KOFF
+            </p>
+        </div>
+        <div class="item" id="item3"> 
+            <p class="i3t1" id="text31">
+                Expiry:
+            </p>
+            <p class="i3t2" id="text32">
+                 OCT 31 2022  |
+            </p>
+            <p class="i3t1" id="text33">
+                11:59:00 P.M
+            </p>
+            <button  onclick="handleCopyTextFromParagraph(),toggle()"  type="button" class="btn btn-outline-danger btn-sm" id="code1">Redeem now</button>
+        
+        </div>
+    
+    </div>
+    <footer>
+      
+        <div class="about">
+            About us
+        </div>
+        <div class="con">
+          <div class="con1">
+            <div class="about-content">
+              <div class="devlopers">
+                Devlopers:
+              </div>
+              Hetvi bhadani 
+              <div class="pf">
+                Student at devang patel institude of science advanced technology and reserch
+              </div>
+              Sangati Chapla 
+              <div class="pf">
+                Student at devang patel institude of science advanced technology and reserch
+              </div>
+              Hitwanshi Dalsania 
+              <div class="pf">
+                (Student at devang patel institude of science advanced technology and reserch)
+              </div>
+      
+          </div>
+          </div>
+          
+          <div class="con2">
+            <div class="contact">
+              Contact us
+          </div>
+          <div class="contact-content">
+                hetvi.bhadani4700@gmail.com
+                hitwanshidalsania@gmail.com
+                sangatichapla@gmail.com
+      
+          </div>
+          </div>
+        </div>
+        
+        
+
+      </div>
+      
+    </footer>
+</body>
+</html>
